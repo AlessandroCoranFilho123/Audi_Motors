@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oxanium", sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ccc;
+}
+
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+section#sobre p {
+    margin-top: 30px;
+    line-height: 1.5em;
+}
+
+section#sobre h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+section#contato p {
+    margin-top: 30px;
+    font-size: 25px;
+    line-height: 1.5em;
+}
+
+section#contato h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+#home {
+    background-image: url("/images/Audi\ Background.jpg");
+    background-size: cover;
+    color: white;
+    padding: 100px 20px;
+}
+
+#sobre {
+    background-color: #e5eaf0;
+    border-radius: 15px;
+    text-align: left;
+    font-size: 25px;
+    margin-bottom: 150px;
+}
+
+#contato {
+    background-color: #d7dbdf;
+    background-color: #e5eaf0;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.modelos-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.modelo {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 240px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+}
+
+.modelo img {
+    max-width: 200px;
+    height: 132px;
+    object-fit: contain;
+    border-radius:  15px;
+}
+
+.p1 {
+    text-align: start;
+}
+
+.modelos-grid .modelo {
+    flex: 1 1 calc(25% - 100px);
+}
+
+.modelos-grid .modelo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.modelos-grid .modelo button {
+    align-self: center;
+    width: 80%;
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 16px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
