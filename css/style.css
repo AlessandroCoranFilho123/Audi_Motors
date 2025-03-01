@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+        
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oxanium", sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+}
+
+p1 {
+    text-align: start;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+section #sobre p{
+    margin-top: 20px;
+    line-height: 1.5em;
+}
+
+section #sobre h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+section #contato h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+section #contato p {
+    margin-top: 30px;
+    font-size: 25px;
+    line-height: 1.5em;
+}
+
+#home {
+    background-image: url("/imagens/Audi\ Background.jpg");
+    background-size: cover;
+    color: #ffffff;
+    padding: 100px 20px;
+}
+
+#sobre {
+    background-color: #e5eaf0;
+    border-radius: 15px;
+    text-align: left;
+    font-size: 25px;
+    margin-bottom: 150px;
+}
+
+#contato {
+    background-color: #e5eaf0;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.modelos-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.modelo {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.modelo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.botao {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    align-self: center; /*aparentemente não muda porra nenhuma*/
+}
+
+.modelo button {
+    align-self: center;
+    width: 80%;
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 16px; 
+}
+
+.mensagem{
+    background-color: blanchedalmond;
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    color: #ccc;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    .modelos-grid {
+        grid-template-columns: 1fr;
+    }
+}
