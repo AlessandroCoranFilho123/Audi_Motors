@@ -1,155 +1,186 @@
-@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
-        
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap");
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Oxanium", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oxanium", sans-serif;
 }
 
 body {
-    background-color: #f0f0f0;
-    color: #333;
+  background-color: #f0f0f0;
+  color: #333;
 }
 
 header {
-    background-color: #000000;
-    color: #ffffff;
-    padding: 20px;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 120px;
+}
+
+h2 {
+  font-size: 50px;
+  margin-bottom: 30px;
 }
 
 p1 {
-    text-align: start;
+  text-align: start;
 }
 
 nav ul {
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 section {
-    padding: 50px;
-    text-align: center;
+  padding: 50px;
+  text-align: center;
 }
 
-section #sobre p{
-    margin-top: 20px;
-    line-height: 1.5em;
+section #sobre p {
+  margin-top: 20px;
+  line-height: 1.5em;
 }
 
 section #sobre h2 {
-    font-size: 40px;
-    text-align: center;
+  font-size: 40px;
+  text-align: center;
 }
 
 section #contato h2 {
-    font-size: 40px;
-    text-align: center;
+  font-size: 40px;
+  text-align: center;
 }
 
 section #contato p {
-    margin-top: 30px;
-    font-size: 25px;
-    line-height: 1.5em;
+  margin-top: 30px;
+  font-size: 25px;
+  line-height: 1.5em;
 }
 
 #home {
-    background-image: url("/imagens/Audi\ Background.jpg");
-    background-size: cover;
-    color: #ffffff;
-    padding: 100px 20px;
+  background-image: url("/imagens/AudiBackground.jpg");
+  background-size: cover;
+  color: #ffffff;
+  padding: 100px 20px;
 }
 
 #sobre {
-    background-color: #e5eaf0;
-    border-radius: 15px;
-    text-align: left;
-    font-size: 25px;
-    margin-bottom: 150px;
+  background-color: #e5eaf0;
+  border-radius: 15px;
+  text-align: left;
+  font-size: 25px;
+  margin-bottom: 150px;
 }
 
 #contato {
-    background-color: #e5eaf0;
-    border-radius: 15px;
-    text-align: center;
-    font-size: 25px;
+  background-color: #e5eaf0;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 25px;
 }
 
-.modelos-grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
+.modelos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
 }
 
 .modelo {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+  padding-bottom: 15px;
 }
 
 .modelo img {
-    max-width: 100%;
-    height: auto;
-}
-
-.botao {
-    padding: 10px 20px;
-    font-size: 1rem;
-    background-color: black;
-    color: white;
-    border: none;
-    cursor: pointer;
-    align-self: center; /*aparentemente não muda porra nenhuma*/
+  max-width: 100%;
+  height: 194px;
+  margin-bottom: 10px;
 }
 
 .modelo button {
-    align-self: center;
-    width: 80%;
-    padding: 15px 20px;
-    font-size: 1.2rem;
-    background-color: black;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-    margin-top: 16px; 
+  align-self: center;
+  width: 80%;
+  padding: 15px 20px;
+  font-size: 21px;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 16px;
 }
 
-.mensagem{
-    background-color: blanchedalmond;
+.modelo p {
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.botao {
+  width: 80%;
+  font-size: 21px;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: auto;
+}
+
+.mensagem {
+  background-color: blanchedalmond;
+  text-align: center;
+  padding: 5px;
+  height: 35px;
+  line-height: 30px;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+  margin-top: 10px;
+  width: 80%;
 }
 
 footer {
-    background-color: #000000;
-    color: #ffffff;
-    padding: 10px;
-    text-align: center;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
 }
 
 nav ul li a:hover {
-    color: #ccc;
+  color: #ccc;
 }
 
 @media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-    }
-    .modelos-grid {
-        grid-template-columns: 1fr;
-    }
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+  .modelos-grid {
+    grid-template-columns: 1fr;
+  }
 }
