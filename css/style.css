@@ -27,6 +27,11 @@ h2 {
   margin-bottom: 30px;
 }
 
+section a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
 p1 {
   text-align: start;
 }
