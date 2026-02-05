@@ -74,7 +74,7 @@ body {
 
 .hero {
   height: 80vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/imagens/Background.png') center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/imagens/Background.webp') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
