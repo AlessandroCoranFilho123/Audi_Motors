@@ -237,9 +237,11 @@
         <div class="info-link">📍 Rua Volkswagen, 123 - Carros Audi, São Paulo - SP, 12345-678, Brasil</div>
       </div>
       <form class="contato-form">
-        <input type="text" placeholder="Seu Nome" required>
-        <input type="email" placeholder="Seu E-mail" required>
-        <textarea placeholder="Como podemos ajudar?" rows="4"></textarea>
+
+        <input type="text" name="nome" placeholder="Seu Nome" required>
+        <input type="email" name="email" placeholder="Seu E-mail" autocomplete="email" required>
+        <textarea name="mensagem"placeholder="Como podemos ajudar?" rows="4"></textarea>
+
         <button type="submit" class="btn-primary">Enviar Mensagem</button>
       </form>
     </div>
